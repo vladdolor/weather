@@ -1,0 +1,379 @@
+/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*end reset*/
+/****-----start-body----****/
+
+@font-face{
+	font-family: "Actor-Regular";
+	src:url(../fonts/Actor-Regular.ttf);
+}
+
+@font-face{
+	font-family: "Coda-Regular";
+	src:url(../fonts/Coda-Regular.ttf);
+}
+
+body{
+	background: url('../images/bg.jpg') no-repeat 0px 0px;
+	text-align: center;
+	background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.main h1{
+padding:50px 25px 100px 25px;
+font-size:40px;
+color:#fff;
+font-family:Coda-Regular;
+}
+
+.container{
+	width:28%;
+	margin:0 auto;
+	background:#f77278;
+	
+}
+
+.wrap{
+padding:30px;
+
+}
+
+
+.clock{
+	float:left;
+}
+
+.Calender{
+padding:75px 0 0 30px;
+
+display:inline-block;
+}
+
+.day{
+color:#ffe168;
+font-size:32px;
+font-family:Actor-Regular;
+
+}
+
+.mdy{
+
+color:#fff;
+font-size:18px;
+font-family:Coda-Regular;
+padding-top:5px;
+
+}
+
+
+
+
+/* Weather Starts */
+.weather{
+padding:10px;
+margin:0 auto;
+background:rgba(0, 174, 239, 0.78);
+}
+
+.wrap1{
+padding:0px 50px;
+}
+
+.city{
+float:left;
+width:50%;
+padding-top:30px;
+}
+.city p{
+color:#fff;
+font-size:30px;
+font-family:Actor-Regular;
+text-align:left;
+}
+
+.weathertype{
+float:left;
+width:33%;
+font-family:Actor-Regular;
+color:#fff;
+font-size:17px;
+}
+
+.weathertype img{
+width:75px;
+}
+
+.temp{
+float:left;
+color:#fff;
+font-size:28px;
+font-family:Coda-Regular;
+padding-top:27px;
+text-align:right;
+}		
+
+.footer{
+padding:75px 10px 50px 10px;
+color:#fff;
+font-size:15px;
+font-family:Coda-Regular;
+}
+
+.footer a{
+text-decoration:none;
+color:#f77278;
+}
+
+
+/*-- responsive media queries --*/ 
+
+@media screen and (max-width:1440px){
+.main h1{
+padding:50px 25px 75px 25px;
+}
+.container{
+	width:32%;
+}
+}
+
+
+@media screen and (max-width:1366px){
+.main h1{
+font-size:38px;
+}
+.container{
+width:34%;
+}
+}
+
+
+@media screen and (max-width:1280px){
+.container{
+width:36%;
+}
+.footer{
+font-size:14px;
+}
+}
+
+
+@media screen and (max-width:1080px){
+.main h1{
+font-size:34px;
+}
+.container{
+width:40%;
+}
+.Calender {
+padding: 75px 0 0 9px;
+}
+}
+
+
+@media screen and (max-width:1050px){
+.container{
+width:44%;
+}
+}
+
+
+@media screen and (max-width:1024px){
+.Calender {
+padding: 75px 0 0 7px;
+}
+}
+
+
+@media screen and (max-width:991px){
+.container{
+width:46%;
+}
+}
+
+
+@media screen and (max-width:800px){
+.container{
+width:54%;
+}
+}
+
+
+@media screen and (max-width:768px){
+.main h1{
+font-size:32px;
+}
+.container{
+width:56%;
+}
+.footer{
+font-size:13px;
+}
+}
+
+
+@media screen and (max-width:736px){
+.container{
+width:58%;
+}
+}
+
+@media screen and (max-width:667px){
+.container{
+width:64%;
+}
+}
+
+
+@media screen and (max-width:640px){
+.container{
+width:60%;
+}
+.wrap {
+    padding: 25px;
+}
+.Calender {
+padding: 52px 0 0 7px;
+}
+.day {
+font-size: 30px;
+}
+.mdy {
+font-size: 16px;
+padding-top: 2px;
+}
+.wrap1 {
+    padding: 0px 20px;
+}
+.city{
+padding-top:22px;
+}
+.city p {
+font-size: 28px;
+}
+.weathertype {
+font-size: 14px;
+}
+.weathertype img {
+width: 65px;
+}
+.temp {
+padding-top: 18px;
+}
+}
+
+
+@media screen and (max-width:600px){
+.main h1 {
+    font-size: 30px;
+	padding: 50px 25px;
+}
+.footer {
+    padding:50px 15px;
+}
+}
+
+@media screen and (max-width:568px){
+
+.container{
+width:76%;
+}
+}
+
+
+
+
+@media screen and (max-width:480px){
+.main h1 {
+    font-size: 28px;
+	padding: 50px 25px;
+}
+.container{
+width:76%;
+}
+}
+
+@media screen and (max-width:414px){
+.main h1 {
+    font-size: 24px;
+    padding: 30px 15px;
+}
+.container {
+    width: 82%;
+}
+.wrap {
+    padding: 10px;
+}
+}
+
+@media screen and (max-width:384px){
+.main h1 {
+    font-size: 22px;
+}
+.container {
+    width: 90%;
+}
+}
+
+@media screen and (max-width:320px){
+.main h1 {
+    font-size: 19px;
+}
+.day {
+    font-size: 26px;
+}
+.mdy {
+    font-size: 13px;
+}
+.Calender {
+    padding: 38px 0 0 5px;
+}
+.wrap1 {
+    padding: 0px 8px;
+}
+.city p {
+    font-size: 24px;
+}
+.weathertype img {
+    width: 56px;
+}
+.temp {
+font-size: 24px;
+padding-top: 20px;
+}
+}
+
+
+
+
+
+
+
+

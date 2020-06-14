@@ -1,0 +1,120 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Spell Weather and clock Responsive Widget Template  :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Spell Weather and clock Widget Tab Form,Login Forms,Sign up Forms,Registration Forms,News letter Forms,Elements"/>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!--themestyle-->
+<script src="js/jClocksGMT.js"></script>
+<script src="js/jquery.rotate.js"></script>
+<link rel="stylesheet" href="css/jClocksGMT.css">
+<script>
+            $(document).ready(function(){
+                $('#clock_hou').jClocksGMT({offset: '-5', hour24: true});
+                $('#clock_dc').jClocksGMT({offset: '-4', digital: false});
+                $('#clock_india').jClocksGMT({offset: '+5.5'});
+            });
+</script>
+<!--timer-->
+<script type="text/javascript">
+               var mydate=new Date()
+               var year=mydate.getYear()
+               if(year<1000)
+                 year+=1900
+                 var day=mydate.getDay()
+                 var month=mydate.getMonth()
+                 var daym=mydate.getDate()
+               if(daym<10)
+                 daym="0"+daym
+                 var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+                 var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+                 
+</script>
+
+</head>
+
+<body>
+
+<div class="main">
+	<h1> Spell Weather and Clock Widget </h1>
+		<div class="container">
+			
+			
+				<div class="clock-date">
+				 <div class="wrap">
+					<div class="clock">
+						<div id="clock_india" class="clock_container">            
+							<div class="clockHolder">
+								<div class="rotatingWrapper"><img class="hour" src="images/clock_hour3.png" alt=""/></div>
+								<div class="rotatingWrapper"><img class="min" src="images/clock_min3.png" alt=""/></div>
+								<img class="clock" src="images/clock111.png" alt=""/> 
+							</div>
+						</div>
+					</div> <!-- Clock End -->
+		
+		
+					<div class="Calender">
+						<div class="day">
+							<script type="text/javascript">
+								document.write(""+dayarray[day]+"")
+							</script>
+						</div>
+			
+						<div class="mdy">
+							<script type="text/javascript">
+							document.write(""+montharray[month]+" "+daym+", "+year+"")
+							</script>
+						</div>
+					</div>	<!-- calender Ends -->
+		
+				  <div class="clear"> </div>
+				 </div>	<!-- Wrap Ends Here -->
+				</div>
+				
+		
+				<div class="weather">
+				  <div class="wrap1">
+					<div class="city">
+						<p> New York </p>
+					</div>
+			
+					<div class="weathertype">
+						<ul>
+							<li> <img src="images/cd.png" alt=" Weather"> </li>
+							<li> <p> Cloudy </p>	</li>
+						</ul>
+					</div>
+			
+					<div class="temp">
+						<p> 23° </p>
+					</div>
+					
+				  <div class="clear"> </div>
+				  </div>
+				</div> <!-- Weather Ends Here -->
+		
+			
+			
+		</div>  <!-- Container End -->
+</div> <!-- Main End -->
+
+	
+	<div class="footer">
+	<p>© 2016 Spell Weather and clock Widget. All Rights Reserved | Design by  <a href="https://w3layouts.com/" target="_blank"> w3layouts </a></p>
+	</div>
+
+
+
+</body>
+</html>
